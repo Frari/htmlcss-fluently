@@ -1,22 +1,89 @@
 *{box-sizing: border-box;
   margin: 0;
   padding: 0;}
+
 .container::after{clear: both;
   content: "";
   display: table;}
 
-.cotainer{width: 80%;
+.container{width: 80%;
+  height: 100%;
   margin: 0 auto;
-border: 1px solid red;}
+  position: relative;}
 
 .col_2{width: 50%;
-float: left;}
+  float: left;
+  position: relative;}
+
+.col_3{width: 33.33%;
+  float: left;
+  position: relative;}
+
+.text_center{text-align: center;}
 
 /* contenuto nav */
-nav{width: 100%;
+nav, header, .figure_3{width: 100%;
+  padding: 40px 20px;
   background-color: #08167f;}
 
-  .col_2 a{text-decoration: none;
-  color: white;}
+.col_2 a{text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 5px;}
 
-  .text_right{text-align: right;}
+.text_right{text-align: right;}
+
+a.green_button{background-color:#04cc2f;
+ border-radius: 5px;
+ padding: 10px 20px;}
+
+a.trasp_button{border-radius: 5px;
+padding: 10px 20px;
+ border: 1px solid blue;
+margin: 0 5px;}
+
+
+/* contenuto header */
+.blue{height: 300px;}
+
+.blue .container .col_2 h1{color: white;
+  font-size: 40px;
+margin-bottom: 30px;}
+
+/* contenuto barra grigia sotto header */
+.grey_bar {background-color:#dee5e0;
+padding: 30px 20px;}
+
+.grey_bar h1, .grey_bar p{padding: 5px 0;}
+
+/* contenuto 3 colonne con immagini */
+.figure_3{background-color: white;}
+
+.col_3 img{width: 100px;
+margin-bottom: 50px;}
+
+.col_3 hr{width: 50px;
+margin: 20px auto;}
+
+.figure_3 > hr{margin-top: 100px;}
+
+/* contenuto sezione immagine livelli */
+.montain{width: 70%;
+margin-left: 20%;}
+
+.cent_text{position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);}
+
+.cont_int{width: 70%;
+ margin: 0 0 0 auto;}
+
+.cont_int h1{line-height: 40px;}
+
+.cont_int p{margin: 20px 0;}
+
+.cont_int a{color: blue;
+text-decoration: underline;}
