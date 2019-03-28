@@ -1,0 +1,22 @@
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+.container::after{clear: both;
+  content: "";
+  display: table;}
+
+.cotainer{width: 80%;
+  margin: 0 auto;
+border: 1px solid red;}
+
+.col_2{width: 50%;
+float: left;}
+
+/* contenuto nav */
+nav{width: 100%;
+  background-color: #08167f;}
+
+  .col_2 a{text-decoration: none;
+  color: white;}
+
+  .text_right{text-align: right;}
